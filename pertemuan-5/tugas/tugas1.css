@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+}
+
+.content{
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 9);
+      width: 100%;
+      max-width: 500px;
+}
+
+body{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 21cm;
+    margin: 0;
+    background-color: rgb(61, 61, 61);
+}
+
+p{
+    margin-top: 2px;
+    color: gray;
+    font-size: 14px;
+}
+
+.input2, select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+h2{
+    margin-bottom: 2px;
+}
+
+.grup-text, .grup-class,.grup{
+    margin-bottom: 15px;
+}
+
+
+.colum{
+display: flex;
+gap: 10px;
+}
+
+
+label{
+    display: block;
+    margin-bottom: 4px;
+}
+
+
+.cekbox-grup{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.cekbox-grup input{
+    margin-right: 6px;
+}
+
+
+button{
+    border: none;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 5px;
+    height: 30px;
+    width: 100%;
+}
+
+button:hover{
+    background: #4d4a4a;
+}
+
+.syarat{
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="tugas5.css" />
+  </head>
+  <body>
+    <div class="content">
+      <h2>Order Form</h2>
+
+      <form>
+        <div class="grup">
+          <label for="fname">Name</label>
+          <input type="text" class="input-text" placeholder="Johnson" />
+        </div>
+
+        <div class="grup">
+          <label for="lname">Email Address</label>
+          <input type="email" class="input-text" placeholder="john@gmail.com" />
+        </div>
+        <div class="grup">
+          <label for="lname">Phone Number</label>
+          <input type="text" class="input-text" placeholder="+62 812345678" />
+        </div>
+
+        <h2>Order Details</h2>
+        <div class="colum">
+          <div class="grup">
+            <label for="">Product</label>
+            <select name="" id="" class="input-text">
+              <option value="">Select a product</option>
+              <option value="">Tas</option>
+            </select>
+          </div>
+          <div class="grup">
+            <label for="">Quantity</label>
+            <input type="text" class="input-text" placeholder="1" />
+          </div>
+        </div>
+
+        <div class="grup">
+          <label for="lname">Size</label>
+          <input type="checkbox">Small
+          <input type="checkbox">Large
+          <input type="checkbox">Medium
+          <input type="checkbox">XL
+        </div>
+        
+        <div class="grup">
+          <label for="lname">Color</label>
+          <input type="checkbox">Red
+          <input type="checkbox">Green
+          <input type="checkbox">Blue
+          <input type="checkbox">Black
+        </div>
+        
+
+        <label for="">Additional Comments</label>
+        <textarea name="" id="" class="text-area" placeholder="Enter any additional comments"></textarea>
+
+        <h2>Payment Details</h2>
+        <label for="">Payment Method</label>
+        <select name="" id="" class="input-text">
+            <option value="">Select a payment method</option>
+            <option value="">BCA</option>
+            <option value="">QRIS</option>
+            <option value="">DANA</option>
+        </select>
+
+        <input type="checkbox" /> I accept the terms and conditions.
+
+        <button type="submit">Submit Order</button>
+      </form>
+    </div>
+  </body>
+</html>

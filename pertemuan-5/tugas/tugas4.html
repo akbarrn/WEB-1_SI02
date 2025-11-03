@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="tugas4.css" />
+  </head>
+  <body>
+    <div class="content">
+      <h2>Volunteer Sign Up Form</h2>
+      <p>Please fill out the following form to become a volunteer</p>
+
+      <form>
+        <div class="colum">
+          <div class="grup">
+            <label for="fname">First Name</label>
+            <input type="text" class="input-text" placeholder="John" />
+          </div>
+          <div class="grup">
+            <label for="lname">Last Name</label>
+            <input type="text" class="input-text" placeholder="Son" />
+          </div>
+        </div>
+
+          <div class="grup">
+            <label for="lname">Email Address</label>
+            <input
+              type="email"
+              class="input-text"
+              placeholder="john@gmail.com"
+            />
+          </div>
+          <div class="grup">
+            <label for="lname">Phone Number</label>
+            <input type="text" class="input-text" placeholder="+62 812345678" />
+          </div>
+
+        <div class="grup">
+          <label for="lname">Date of Birth</label>
+          <input type="date" class="input-text" placeholder="Enter your adress" />
+        </div>
+
+
+          <div class="grup">
+            <label for="fname">Preferred Volunteer Role</label>
+            <select name="" id="" class="input-text">
+              <option value="">Select</option>
+              <option value="">Leader</option>
+              <option value="">Co-Leader</option>
+              <option value="">Secretary</option>
+            </select>
+        </div>
+
+        <h2>Availability</h2>
+
+        <div class="grup">
+          <label for="">Days Availability</label>
+          <p>Select the days you are available to volunteer</p>
+          <div class="check-grid">
+            <input type="checkbox" />Monday
+            <input type="checkbox" />Tuesday
+            <input type="checkbox" />Wednesday
+            <input type="checkbox" />Thursday
+            <input type="checkbox" />Friday
+            <input type="checkbox" />Saturday
+            <input type="checkbox" />Sunday
+          </div>
+        </div>
+
+        <div class="colum">
+            <div class="grup">
+                <label for="">Available Start Time</label>
+                <input type="time" class="input-text" placeholder="a">
+            </div>
+            <div class="grup">
+                <label for="">Available End Time</label>
+                <input type="time" class="input-text" placeholder="a">
+            </div>
+        </div>
+
+        <h2>Skill and Interest</h2>
+
+        <div class="grup">
+          <label for="">Skills and Experience</label>
+          <textarea name="" class="text-area" id="" placeholder="Enter your skills and experience"></textarea>
+          <p>Please describe your skills and experience, if any, that would be relevant to the volunteer role.</p>
+        </div>
+
+        <div class="grup">
+          <label for="">Interest</label>
+          <p>Select your interest</p>
+          <input type="checkbox">Animals
+          <input type="checkbox">Elderly
+          <input type="checkbox">Health
+          <input type="checkbox">Poverty
+          <input type="checkbox">Children
+          <input type="checkbox">Environment
+          <input type="checkbox">Homelessness
+        </div>
+
+        <input type="checkbox" /> I agree to the terms and conditions.
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

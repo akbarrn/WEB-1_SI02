@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="tugas3.css" />
+  </head>
+  <body>
+    <div class="content">
+      <h2>Membership Registration Form</h2>
+      <p>Please fill out the form below to becom a member</p>
+
+      <form>
+        <div class="colum">
+          <div class="grup">
+            <label for="fname">First Name</label>
+            <input type="text" class="input-text" placeholder="John" />
+          </div>
+          <div class="grup">
+            <label for="lname">Last Name</label>
+            <input type="text" class="input-text" placeholder="Son" />
+          </div>
+        </div>
+
+        <div class="colum">
+          <div class="grup">
+            <label for="lname">Email Address</label>
+            <input
+              type="email"
+              class="input-text"
+              placeholder="john@gmail.com"
+            />
+          </div>
+          <div class="grup">
+            <label for="lname">Phone Number</label>
+            <input type="text" class="input-text" placeholder="+62 812345678" />
+          </div>
+        </div>
+        <div class="grup">
+          <label for="lname">Adress Line 1</label>
+          <input type="text" class="input-text" placeholder="Enter your adress" />
+        </div>
+        <div class="grup">
+          <label for="lname">Adress Line 2</label>
+          <input type="text" class="input-text" placeholder="Enter your adress" />
+        </div>
+
+          <div class="grup">
+            <label for="fname">Country</label>
+            <select name="" id="" class="input-text">
+              <option value="">France</option>
+              <option value="">Indonesia</option>
+              <option value="">Saudi Arabia</option>
+              <option value="">Japan</option>
+              <option value="">Germany</option>
+              <option value="">Swiss</option>
+            </select>
+        </div>
+
+        <div class="grup">
+          <label for="">Membership Type</label>
+          <div class="check-grid">
+            <input type="radio" />Basic 
+            <input type="radio" />Premium
+            <input type="radio" />Elite 
+            <input type="radio" />Exclusive
+          </div>
+        </div>
+
+        <h2>Interest</h2>
+
+        <div class="grup">
+          <label for="">Favorite Sports</label>
+          <input type="checkbox" />Football
+          <input type="checkbox" />Baseball
+          <input type="checkbox" />Soccer
+          <input type="checkbox" />Basketball
+          <input type="checkbox" />Other
+        </div>
+
+        <div class="grup">
+          <label for="">Why do you want to become a member?</label>
+          <textarea class="text-area" placeholder="Please tell us why you want to join"></textarea>
+        </div>
+
+        <input type="checkbox" /> I agree to the terms and conditions.
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
