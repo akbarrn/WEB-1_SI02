@@ -1,0 +1,68 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<!-- <body>
+    #Menampilkan: Nama, Nim, Program Studi, Foto profil.
+Tombol:
+Ubah Nama
+Ubah Program Studi
+Ganti Foto
+Sembunyikan Biodata
+Tampilkan Biodata
+Gunakan:
+getElementById()
+innerHTML
+style
+setAttribute() -->
+<h1>BIODATA</h1>
+<div class="isi">
+    <p id="nama" style="display: none;" >Nama: Akbar Nur Habibi Putra Setiawan</p>
+    <p id="nim" style="display: none;">NIM: 0110125123</p>
+    <p id="prodi" style="display: none;">Program Studi: Sistem Informasi</p>
+</div>
+<img id="foto" src="foto1.jpg" alt="Foto Profil" width="150" style="display: none;">
+
+    <br>
+<div class="container">
+    <button class="btn" id="text" onclick="ubahNama()">Ubah Nama</button>
+    <button class="btn" id="text" onclick="gantiFoto()">Ganti Foto</button>
+    <button class="btn" id="text" onclick="ubahProdi()">Ubah Program Studi</button>
+    <button class="btn" id="text" onclick="sembunyikanBiodata()">Sembunyikan Biodata</button>
+    <button class="btn" id="text" onclick="tampilkanBiodata()">Tampilkan Biodata</button>
+</div>
+    <script>
+        function ubahNama() {
+            document.getElementById("nama").innerHTML = "Nama: Andre Ghailan";
+        }
+
+        function ubahProdi() {
+            document.getElementById("prodi").innerHTML = "Program Studi: Teknik Informatika";
+        }
+
+        function gantiFoto() {
+            document.getElementById("foto").setAttribute("src", "foto2.jpg");
+        }
+
+        function sembunyikanBiodata() {
+            document.getElementById("nama").style.display = "none";
+            document.getElementById("nim").style.display = "none";
+            document.getElementById("prodi").style.display = "none";
+            document.getElementById("foto").style.display = "none";
+        }
+
+        function tampilkanBiodata() {
+            document.getElementById("nama").style.display = "block";
+            document.getElementById("nim").style.display = "block";
+            document.getElementById("prodi").style.display = "block";
+            document.getElementById("foto").style.display = "block";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Buat notifikasi dengan animasi chaining.
+
+Ketentuan
+Animasi muncul:
+Ubah warna (CSS)
+Fade In
+Slide Down
+Setelah 3 detik:
+Slide Up
+Fade Out
+Semua dalam satu chaining -->
+
+    <div id="notif" style="width:300px; height:100px; background-color:lightgray; display:none; text-align:center; line-height:100px;">
+        Ini adalah notifikasi!
+    </div>
+
+    <button onclick="showNotif()">Tampilkan Notifikasi</button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        function showNotif() {
+            $("#notif")
+                .css("background-color", "lightgreen")
+                .fadeIn(500)
+                .slideDown(500)
+                .delay(3000)
+                .slideUp(500)
+                .fadeOut(500);
+        }
+    </script>
+</body>
+</html>

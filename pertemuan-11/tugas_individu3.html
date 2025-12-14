@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Buat halaman FAQ yang interaktif menggunakan jQuery.
+
+Ketentuan
+Minimal 5 pertanyaan
+Klik → tampilkan/sembunyikan jawaban
+Hover → warna biru, keluar → kembali normal
+Gunakan:
+.click()
+.hover()
+.toggle()
+
+    <h2>FAQ</h2>
+
+    <div class="faq-item">
+        <h3 class="question">Apa itu HTML?</h3>
+        <p class="answer" style="display:none;">HTML adalah bahasa markup untuk membuat halaman web.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3 class="question">Apa itu CSS?</h3>
+        <p class="answer" style="display:none;">CSS adalah bahasa untuk mendesain tampilan halaman web.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3 class="question">Apa itu JavaScript?</h3>
+        <p class="answer" style="display:none;">JavaScript adalah bahasa pemrograman untuk membuat halaman web interaktif.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3 class="question">Apa itu jQuery?</h3>
+        <p class="answer" style="display:none;">jQuery adalah library JavaScript yang memudahkan manipulasi DOM.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3 class="question">Bagaimana cara menggunakan jQuery?</h3>
+        <p class="answer" style="display:none;">Anda dapat menyertakan jQuery melalui CDN dan mulai menulis kode jQuery di dalam tag script.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".question").click(function() {
+                $(this).next(".answer").toggle();
+            });
+
+            $(".question").hover(
+                function() {
+                    $(this).css("color", "blue");
+                },
+                function() {
+                    $(this).css("color", "black");
+                }
+            );
+        });
+    </script>
+</body>
+</html>
